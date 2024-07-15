@@ -27,11 +27,9 @@ function addValidCheck(input, condition){
   
   if (condition) {
     input.classList.add("is-valid");
-    console.log("Validation: " + input.id + " Value: " + input.value + " Pass");
     return true;
   } else {
     input.classList.add("is-invalid");
-    console.log("Validation: " + input.id + " Value: " + input.value + " Not-Pass");
     return false;
   }
 }
