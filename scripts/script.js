@@ -24,11 +24,14 @@ function resetInput(input){
 }
 
 function addValidCheck(input, condition){
+  
   if (condition) {
     input.classList.add("is-valid");
+    console.log("Validation: " + input.id + " Value: " + input.value + " Pass");
     return true;
   } else {
     input.classList.add("is-invalid");
+    console.log("Validation: " + input.id + " Value: " + input.value + " Not-Pass");
     return false;
   }
 }
@@ -40,7 +43,7 @@ passwordInput.onkeyup = () => resetAlert(passwordInput);
 confirmPasswordInput.onkeyup = () => resetAlert(confirmPasswordInput);
 
 submitBtn.onclick = () => {
-  isValid = true;
+  let isValid = true;
   isValid = addValidCheck(firstNameInput, firstNameInput.value.length > 0)
   isValid = addValidCheck(lastNameInput, lastNameInput.value.length > 0)
   isValid = addValidCheck(emailInput, validateEmail(emailInput.value))
