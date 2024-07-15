@@ -3,11 +3,11 @@
 
 ### ป้อนข้อมูลนักศึกษา
 
-รหัส นศ.:
+รหัส นศ.: 660612155
 
-ชื่อ-สกุล :
+ชื่อ-สกุล : ไพสิฐ เลิศอนันต์พิพัฒน์
 
-GitHub Page URL :
+GitHub Page URL : https://cpe207-students-167.github.io/lab07-archiash/
 
 ---
 
