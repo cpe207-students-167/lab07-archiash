@@ -44,11 +44,11 @@ confirmPasswordInput.onkeyup = () => resetAlert(confirmPasswordInput);
 
 submitBtn.onclick = () => {
   let isValid = true;
-  isValid = addValidCheck(firstNameInput, firstNameInput.value.length > 0)
-  isValid = addValidCheck(lastNameInput, lastNameInput.value.length > 0)
-  isValid = addValidCheck(emailInput, validateEmail(emailInput.value))
-  isValid = addValidCheck(passwordInput, passwordInput.value.length > 5)
-  isValid = addValidCheck(confirmPasswordInput, confirmPasswordInput.value.length > 5 && confirmPasswordInput.value == passwordInput.value)
+  isValid = addValidCheck(firstNameInput, firstNameInput.value.length > 0) && isValid
+  isValid = addValidCheck(lastNameInput, lastNameInput.value.length > 0) && isValid
+  isValid = addValidCheck(emailInput, validateEmail(emailInput.value)) && isValid
+  isValid = addValidCheck(passwordInput, passwordInput.value.length > 5) && isValid
+  isValid = addValidCheck(confirmPasswordInput, confirmPasswordInput.value.length > 5 && confirmPasswordInput.value == passwordInput.value) && isValid
   if (isValid) alert("Registered successfully");
 };
 
